@@ -8,7 +8,8 @@ db_password       = "root"                # Database password
 Vagrant.configure("2") do |config|
 
   # Imagen de vagrant
-  config.vm.box = "primalskill/ubuntu-trusty64"
+  #config.vm.box = "primalskill/ubuntu-trusty64"
+  config.vm.box = "hashicorp/precise32"
 
   # Network config
   config.vm.network :forwarded_port, guest: guest_port, host: host_port, auto_correct: true
